@@ -11,6 +11,8 @@ body
 }
 h1, h2, h3, h5
 {
+  text-transform: capitalize;
+  margin-top: 0;
   margin-bottom: 0;
 }
 a
@@ -21,6 +23,10 @@ a
 .text-black
 {
   color:black;
+}
+.text-white
+{
+  color: white;
 }
 .d-flex
 {
@@ -34,9 +40,18 @@ a
 {
   margin-top: 1.5rem!important;
 }
+.m-auto
+{
+  margin: auto;
+}
 p
 {
   margin-top: 0;
+}
+.p-lr-null
+{
+  padding-left: 0!important;
+  padding-right: 0!important;
 }
 
 *{box-sizing: border-box;}
@@ -74,7 +89,7 @@ p
 }
 span
 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .listDesktop
 {
@@ -192,7 +207,6 @@ form
 }
 .materi
 {
-  display: inline-block;
   position: relative;
   width: 100%;
   padding-left: 15px;
@@ -200,6 +214,7 @@ form
 }
 .imgcontent
 {
+  margin: auto;
   background-color: #ffffff;
   background-clip: border-box;
   position:relative;
@@ -237,7 +252,7 @@ form
 {
   position: relative;
   width: 100%;
-  padding-left: 15px;
+  padding-left: 34px;
   padding-right: 15px;
 }
 .numberpage
@@ -265,21 +280,46 @@ section .baju
   background-color: rgb(91, 91, 91);
 }
 
+@media (min-width: 1126px){
+  .container{
+    max-width: 1126px!important;
+  }
+  .page{
+    padding-left: 31px;
+  }
+  .imgcontent{
+    width: 90%;
+  }
+}
 
 @media (min-width: 992px){
   .listDesktop{
     flex-direction:row;
     }
     .container{
-    flex-wrap: nowrap;
-    max-width: 960%;
+    max-width: 960px;
     }
     .materi{
     flex:0 0 33.33333%;
     max-width: 33.33333%;
     }
 }
+.email
+{
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+.button
+{
+  background-color: #13ba28;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
 .Footer
 {
-  background-color: #073b03;
+  background-color: rgb(204, 204, 204);
 }
