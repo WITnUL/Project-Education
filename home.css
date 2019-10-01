@@ -15,10 +15,29 @@ h1, h2, h3, h5
   margin-top: 0;
   margin-bottom: 0;
 }
+hr
+{
+  border: 0;
+  box-sizing: content-box;
+  border-top: 1px solid #eee;
+  margin-bottom: 1rem;
+}
 a
 {
   text-decoration:none;
   background-color: transparent;
+}
+li
+{
+  margin-bottom: 1rem;
+}
+.align-middle
+{
+  vertical-align: middle!important;
+}
+.bgc-abu
+{
+  background-color: #eee;
 }
 .text-black
 {
@@ -28,9 +47,25 @@ a
 {
   color: white;
 }
+.d-block, .d-block1
+{
+  display: block;
+}
+.d-in
+{
+  display: inline!important;
+}
 .d-flex
 {
   display: flex!important;
+}
+.d-none
+{
+  display: none;
+}
+.mb-li
+{
+  margin-bottom: .5rem;
 }
 .mb
 {
@@ -40,18 +75,39 @@ a
 {
   margin-top: 1.5rem!important;
 }
+.m-tb
+{
+  margin-top: 3rem!important;
+  margin-bottom: 3rem!important;
+}
 .m-auto
 {
   margin: auto;
+}
+.mb-null
+{
+  margin-bottom: 0!important;
+}
+.mt-null
+{
+  margin-top: 0!important;
 }
 p
 {
   margin-top: 0;
 }
+.pad
+{
+  padding: .5rem;
+}
 .p-lr-null
 {
   padding-left: 0!important;
   padding-right: 0!important;
+}
+.border-r
+{
+  border-radius: 5px;
 }
 
 *{box-sizing: border-box;}
@@ -94,17 +150,12 @@ span
 .listDesktop
 {
   display: flex;
-  padding-left: 0;
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
   margin-right: auto!important;
 }
-li
-{
-  display: block;
-  padding: .5rem;
-}
+
 .container ul li a
 {
   font-weight: 400;
@@ -174,12 +225,10 @@ form
   padding: 4rem 2rem;
   background-color: rgba(11, 191, 29, 0.84);
   color: white;
-  margin: 0!important;
+  margin: 0;
 }
-.judul
+.judul, .materi, .body-materi, .body-materi1
 {
-  flex-basis: 0;
-  flex-grow: 1;
   position: relative;
   width: 100%;
   padding-left: 15px;
@@ -188,7 +237,7 @@ form
 .judul h1
 {
   text-shadow: 0px 0px 20px;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 0;
   margin-top: 0;
@@ -201,18 +250,12 @@ form
 }
 .content
 {
+  background-color: white;
   display: block;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
-.materi
-{
-  position: relative;
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.imgcontent
+.imgcontent, .reah
 {
   margin: auto;
   background-color: #ffffff;
@@ -279,6 +322,62 @@ section .baju
 {
   background-color: rgb(91, 91, 91);
 }
+.materi h2
+{
+  font-weight: 700;
+  font-size: 2rem;
+}
+.list-materi
+{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.list-materi-item
+{
+  position: relative;
+  display: block;
+  border: 1px solid #eee;
+  padding: .75rem 1.25rem;
+  margin-bottom: -1px;
+  color: rgb(68, 68, 68);
+}
+.list-materi-item:first-child
+{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.list-materi-item:last-child
+{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.share
+{
+  display: block;
+}
+.imgshare
+{
+  padding: 0;
+  display: flex;
+  position: relative;
+  list-style: none;
+}
+.share-item
+{
+  margin-left: .5rem;
+  margin-right: .5rem;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.listimg
+{
+  width: 30px;
+  height: 30px;
+}
+
 
 @media (min-width: 1126px){
   .container{
@@ -293,7 +392,7 @@ section .baju
 }
 
 @media (min-width: 992px){
-  .listDesktop{
+    .listDesktop{
     flex-direction:row;
     }
     .container{
@@ -302,6 +401,18 @@ section .baju
     .materi{
     flex:0 0 33.33333%;
     max-width: 33.33333%;
+    }
+    .body-materi
+    {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+    .body-materi1{
+      flex: 0 0 25%;
+      max-width: 25%;
+    }
+    .d-block1{
+      display: block!important;
     }
 }
 .email
