@@ -1,5 +1,5 @@
 # ProjectAkhir
-+-60% done
++-60% done <br>
 #Bagian Yang Masih Kurang
 <br>
  
