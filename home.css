@@ -31,6 +31,22 @@ li
 {
   margin-bottom: 1rem;
 }
+.align-r
+{
+  text-align: right;
+}
+.align-c
+{
+  text-align: center;
+}
+.align-l
+{
+  text-align: left;
+}
+.align-j
+{
+  text-align: justify;
+}
 .align-middle
 {
   vertical-align: middle!important;
@@ -38,6 +54,14 @@ li
 .bgc-abu
 {
   background-color: #eee;
+}
+.bgc-white
+{
+  background-color: white;
+}
+.bgc-null
+{
+  background-color: inherit!important;
 }
 .text-black
 {
@@ -59,6 +83,14 @@ li
 {
   display: flex!important;
 }
+.flex-row
+{
+  flex-direction: row!important;
+}
+.d-inb
+{
+  display: inline-block!important;
+}
 .d-none
 {
   display: none;
@@ -74,6 +106,14 @@ li
 .mt
 {
   margin-top: 1.5rem!important;
+}
+.mr-auto
+{
+  margin-right: auto;
+}
+.mt-bio
+{
+  margin-top: .45rem;
 }
 .m-tb
 {
@@ -92,6 +132,10 @@ li
 {
   margin-top: 0!important;
 }
+.mr-10
+{
+  margin-left: 10px!important;
+}
 p
 {
   margin-top: 0;
@@ -100,14 +144,61 @@ p
 {
   padding: .5rem;
 }
+.pad-tb
+{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.pad-lr
+{
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .p-lr-null
 {
   padding-left: 0!important;
   padding-right: 0!important;
 }
+.w-100
+{
+  width: 100%;
+}
+.w-95
+{
+  width: 95%;
+}
+.border
+{
+  border: 1px solid rgb(9, 172, 25);
+}
+.border-bot
+{
+  border-bottom: 1px solid #eee;
+}
+.border-abu
+{
+  border: 1px solid #eee;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
 .border-r
 {
   border-radius: 5px;
+}
+.just-beetwen
+{
+  justify-content: space-between!important;
+}
+.pos-sticky
+{
+  position:  sticky;
+  top: 0;
+  z-index: 1025;
+}
+.pos-r
+{
+    position:relative;
 }
 
 *{box-sizing: border-box;}
@@ -128,6 +219,7 @@ p
 .nav .container
 {
   display: flex;
+  flex-wrap: wrap;
 }
 .container
 {
@@ -147,13 +239,12 @@ span
 {
   font-size: 1.5rem;
 }
-.listDesktop
+.listDesktop, .listDesktop1
 {
-  display: flex;
+  flex-direction: column;
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
-  margin-right: auto!important;
 }
 
 .container ul li a
@@ -227,7 +318,7 @@ form
   color: white;
   margin: 0;
 }
-.judul, .materi, .body-materi, .body-materi1
+.judul, .materi, .body-materi, .body-materi1, .contentmateri
 {
   position: relative;
   width: 100%;
@@ -250,7 +341,6 @@ form
 }
 .content
 {
-  background-color: white;
   display: block;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -295,12 +385,13 @@ form
 {
   position: relative;
   width: 100%;
-  padding-left: 34px;
+  padding-left: 15px;
   padding-right: 15px;
 }
 .numberpage
 {
 display: block;
+width: 203px;
 }
 .cok
 {
@@ -377,14 +468,22 @@ section .baju
   width: 30px;
   height: 30px;
 }
+.img-materi-lain
+{
+  width: 60px;
+}
+.balas-comment
+{
+  font-size: .75rem!important;
+  font-style: italic;
+  color: rgb(55, 55, 55);
+  margin: 0!important;
+}
 
 
 @media (min-width: 1126px){
   .container{
     max-width: 1126px!important;
-  }
-  .page{
-    padding-left: 31px;
   }
   .imgcontent{
     width: 90%;
@@ -395,26 +494,51 @@ section .baju
     .listDesktop{
     flex-direction:row;
     }
-    .container{
-    max-width: 960px;
-    }
-    .materi{
-    flex:0 0 33.33333%;
-    max-width: 33.33333%;
-    }
-    .body-materi
-    {
-      flex: 0 0 75%;
-      max-width: 75%;
-    }
-    .body-materi1{
-      flex: 0 0 25%;
-      max-width: 25%;
-    }
-    .d-block1{
-      display: block!important;
-    }
 }
+@media (min-width:867px) {
+  .materi{
+    flex:0 0 33.33333%!important;
+    max-width: 33.33333%!important;
+  }
+  .body-materi1{
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .body-materi{
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .d-block1{
+    display: block!important;
+  }
+}
+@media (max-width:867px) {
+  .listDesktop{
+    display: none!important;
+  }
+  .listDesktop1{
+    display: flex;
+  }
+}
+@media (min-width:540px) {
+  .materi{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .container{
+    max-width: 851px;
+  }
+}
+@media (max-width:485px) {
+  .form-control{
+    display: none;
+  }
+  .tombolsearch{
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+  }
+}
+
 .email
 {
   width: 100%;
