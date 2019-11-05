@@ -221,6 +221,12 @@ form {
   flex-wrap: wrap;
   align-items: center;
 }
+.cari2 {
+  display: none;
+  width: 100%;
+  border: 3px ridge rgb(180, 180, 180);
+  padding: 10px;
+}
 .input {
   position: relative;
   display: flex;
@@ -237,8 +243,8 @@ form {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
-.tombolsearch {
-  display: inline-block;
+.tombolsearch,
+.tombolsearch1 {
   font-weight: 400;
   color: white;
   text-align: center;
@@ -461,8 +467,12 @@ section .baju {
     display: none;
   }
   .tombolsearch {
-    border-top-left-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
+    display: none;
+  }
+  .tombolsearch1 {
+    display: block;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
   }
 }
 
