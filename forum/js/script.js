@@ -1,22 +1,65 @@
-var kesempatan_login = 5;
-function cek_login() {
-  var email = document.getElementById("email").value;
-  var pass = document.getElementById("pass").value;
-  if (email == "witsudi217@gmail.com" && pass == "witsudy12345") {
-    alert("Login Berhasil");
-    document.getElementById("email").value = "";
-    document.getElementById("pass").value = "";
-  } else {
-    if (kesempatan_login == 0) {
-      alert("Kesempatan login tidak tersedia");
-    } else {
-      kesempatan_login -= 1;
-      alert("Login gagal, Tersisa " + kesempatan_login + " Kesempatan login");
-      if (kesempatan_login == 0) {
-        document.getElementById("email").disable = true;
-        document.getElementById("pass").disable = true;
-        document.getElementById("login").disable = true;
-      }
+// Validation
+$(document).ready(function () {
+  $('#form').submit(function () {
+    var email = $('#email').val().length;
+    var pass = $('#pass').val().length;
+
+    if (email == 0) {
+      $(".pemberitahuan-email").css('display', 'block');
+      return false;
+    } else if (pass < 6) {
+      $(".pemberitahuan-pass").css('display', 'block');
+      return false;
     }
-  }
-}
+  });
+});
+
+// Show Hidden Password
+$(document).ready(function () {
+  var cek = $('#pass-checkbox').val();
+  $('#pass-checkbox').click(function () {
+    if ($(this).is(':checked')) {
+      $('#pass').attr('type', 'text');
+    } else {
+      $('#pass').attr('type', 'password');
+    }
+  });
+});
+
+// Function Show and Hidden Profile & edit
+$(document).ready(function () {
+  $('#edit').click(function () {
+    $('#isi-profile').hide();
+    $('#isi-edit').show();
+  });
+  $('#profile').click(function () {
+    $('#isi-profile').show();
+    $('#isi-edit').hide();
+  })
+});
+
+//modal ganti password
+$(document).ready(function () {
+  $('#muncul').click(function () {
+    $('.trans-modal').show();
+  });
+  $('#close').click(function () {
+    $('.trans-modal').hide();
+  });
+  $('.trans-modal').click(function () {
+    $('.trans-modal').hide();
+  })
+});
+
+// modal konfirmasi edit
+$(document).ready(function () {
+  $('#muncullah').click(function () {
+    $('.trans-modal-konfir').show();
+  });
+  $('#close').click(function () {
+    $('.trans-modal-konfir').hide();
+  });
+  $('.trans-modal-konfir').click(function () {
+    $('.trans-modal-konfir').hide();
+  })
+});

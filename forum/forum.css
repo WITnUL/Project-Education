@@ -10,6 +10,7 @@ body {
   text-align: left;
   color: black;
 }
+
 h1,
 h2,
 h3,
@@ -19,206 +20,268 @@ h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 hr {
   border: 0;
   box-sizing: content-box;
   border-top: 1px solid #eee;
   margin-bottom: 1rem;
 }
+
 a {
   text-decoration: none;
   background-color: transparent;
 }
+
 li {
   margin-bottom: 1rem;
   list-style: none;
 }
+
 .float-l {
   float: left;
 }
+
 .float-r {
   float: right;
 }
+
 .align-r {
   text-align: right;
 }
+
 .align-c {
   text-align: center;
 }
+
 .align-l {
   text-align: left;
 }
+
 .align-j {
   text-align: justify;
 }
+
 .align-middle {
   vertical-align: middle !important;
 }
+
 .just-c {
   justify-content: center;
 }
+
 .bgc-abu {
   background-color: #eee !important;
 }
+
 .bgc-white {
   background-color: white;
 }
+
 .bgc-null {
   background-color: inherit !important;
 }
+
 .text-black {
   color: black;
 }
+
 .text-white {
   color: white;
 }
+
 .text-abu {
   color: rgb(128, 128, 128);
 }
+
 .style-italic {
   font-style: italic;
 }
+
 .d-block,
 .d-block1 {
   display: block;
 }
+
 .d-in {
   display: inline !important;
 }
+
 .d-flex {
   display: flex !important;
 }
+
 .flex-row {
   flex-direction: row !important;
 }
+
 .wrap {
   flex-wrap: wrap;
 }
+
 .d-if {
   display: inline-flex;
 }
+
 .d-inb {
   display: inline-block !important;
 }
+
 .d-grid {
   display: grid;
-  grid-template-columns: 100px 1fr;
+  grid-template-columns: 200px 1fr;
 }
+
 .d-none {
   display: none;
 }
+
 .mb-li {
   margin-bottom: 0.5rem;
 }
+
 .mb {
   margin-bottom: 1.5rem !important;
 }
+
 .mt {
   margin-top: 1.5rem !important;
 }
+
 .mr-auto {
   margin-right: auto;
 }
+
 .ml-auto {
   margin-left: auto;
 }
+
 .mt-bio {
   margin-top: 0.45rem;
 }
+
 .ml {
   margin-left: 0.45rem;
 }
+
 .ml-cont {
   margin-left: 1.8rem;
 }
+
 .m-tb {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
 }
+
 .m-auto {
   margin: auto;
 }
+
 .mb-null {
   margin-bottom: 0 !important;
 }
+
 .mt-null {
   margin-top: 0 !important;
 }
+
 .mr {
   margin-right: 62px !important;
 }
+
 .m-lr {
   margin-left: 5px;
   margin-right: 5px;
 }
+
 p {
   margin-top: 0;
 }
+
 .pad {
   padding: 0.5rem;
 }
+
 .pad-t {
   padding-top: 20px;
 }
+
 .pad-tb {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .pad-lr {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .p-lr-null {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
 .pad-null {
   padding: 0;
 }
+
 .w-100 {
   width: 100%;
 }
+
 .w-95 {
   width: 95%;
 }
+
 .w-15 {
   width: 15%;
 }
+
 .border-null {
   border: none;
 }
+
 .border {
   border: 1px solid rgb(9, 172, 25);
 }
+
 .bor-r {
   border-right: 1px solid rgb(9, 172, 25);
 }
+
 .border-bot {
   border-bottom: 1px solid rgb(9, 172, 25);
 }
+
 .border-abu {
   border: 1px solid #eee;
   border-left: none;
   border-right: none;
   border-bottom: none;
 }
+
 .bor-abu {
   border: 1px solid rgb(166, 166, 166) !important;
 }
+
 .border-r {
   border-radius: 5px;
 }
+
 .lingkaran {
   border-radius: 50%;
 }
+
 .just-beetwen {
   justify-content: space-between !important;
 }
+
 .pos-sticky {
   position: sticky;
   top: 0;
   z-index: 1025;
 }
+
 .pos-r {
   position: relative;
 }
@@ -226,26 +289,31 @@ p {
 * {
   box-sizing: border-box;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .nav {
   padding: 0.5rem 1rem;
   background-color: rgb(14, 99, 15);
   align-items: center;
   justify-content: space-between;
 }
+
 .nav .container {
   display: flex;
   flex-wrap: wrap;
 }
+
 .profilenav {
   height: 50px;
   line-height: 50px;
 }
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -253,14 +321,17 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
 .link {
   text-decoration: none;
   color: white;
   font-weight: 800;
 }
+
 span {
   font-size: 1.5rem;
 }
+
 .listDesktop,
 .listDesktop1,
 .listpertanyaan {
@@ -276,23 +347,28 @@ span {
   color: rgba(0, 0, 0, 0.86);
   padding: 0.5rem 1rem;
 }
+
 .container ul li a:hover {
   color: black;
 }
+
 form {
   font-family: Lato, "PT Sans", Roboto, sans-serif;
 }
+
 .Search {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .input {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
 }
+
 .form-control {
   display: block;
   padding: 0.375rem 0.75rem;
@@ -303,6 +379,7 @@ form {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
+
 .tombolsearch {
   display: inline-block;
   font-weight: 400;
@@ -319,18 +396,22 @@ form {
   background-color: #20b607;
   cursor: pointer;
 }
+
 .tombolsearch:hover {
   background-color: #138301;
 }
+
 .header {
   display: block;
 }
+
 .baju {
   padding: 4rem 2rem;
   background-color: rgba(11, 191, 29, 0.84);
   color: white;
   margin: 0;
 }
+
 .judul,
 .materi,
 .body-materi,
@@ -342,6 +423,7 @@ form {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .judul h1 {
   text-shadow: 0px 0px 20px;
   font-size: 2.5rem;
@@ -349,19 +431,23 @@ form {
   margin-bottom: 0;
   margin-top: 0;
 }
+
 .judul p {
   text-transform: capitalize;
   margin-top: 0;
   font-size: 1.2em;
 }
+
 .main {
   padding: 20px;
 }
+
 .content {
   display: block;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
 .imgcontent,
 .reah {
   margin: auto;
@@ -375,6 +461,7 @@ form {
   word-wrap: break-word;
   box-shadow: 5px 5px 10px rgb(182, 178, 179);
 }
+
 .imgcontent img {
   vertical-align: middle;
   border-radius: 0.25rem;
@@ -382,10 +469,12 @@ form {
   border-bottom-right-radius: 0;
   width: 100%;
 }
+
 .judulcontent {
   flex: 1 1 auto;
   padding: 1.25rem;
 }
+
 .judulcontent h3 {
   font-weight: 700;
   margin-bottom: 0.75rem;
@@ -395,21 +484,25 @@ form {
   line-height: 1.2;
   margin-top: 0;
 }
+
 .page {
   position: relative;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .numberpage {
   display: block;
   width: 203px;
 }
+
 .cok {
   display: flex;
   padding-left: 0;
   margin-bottom: 1.5rem;
 }
+
 .numberpage a {
   background-color: #ffffff;
   color: black;
@@ -419,19 +512,23 @@ form {
   float: left;
   padding: 8px 15px;
 }
+
 section .baju {
   background-color: rgb(91, 91, 91);
 }
+
 .materi h2 {
   font-weight: 700;
   font-size: 2rem;
 }
+
 .list-materi {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
 }
+
 .list-materi-item {
   position: relative;
   display: block;
@@ -440,23 +537,28 @@ section .baju {
   margin-bottom: -1px;
   color: rgb(68, 68, 68);
 }
+
 .list-materi-item:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
 .list-materi-item:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 .share {
   display: block;
 }
+
 .imgshare {
   padding: 0;
   display: flex;
   position: relative;
   list-style: none;
 }
+
 .share-item {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -464,54 +566,86 @@ section .baju {
   height: 30px;
   cursor: pointer;
 }
+
 .listimg {
   width: 30px;
   height: 30px;
 }
+
 .img-materi-lain {
   width: 60px;
 }
+
 .balas-comment {
   font-size: 0.75rem !important;
   font-style: italic;
   color: rgb(55, 55, 55);
   margin: 0 !important;
 }
+
 .jmllihat-jawab {
   width: 13%;
 }
+
 .plengngen {
   width: 85%;
 }
+
 .profcampo {
   margin-bottom: -0.75rem;
 }
-.profilepecek {
+
+.profilepecek-profile,
+.profilepecek-edit {
   background-color: white !important;
   padding-bottom: 15px;
   padding-top: 4px;
 }
+
 .profilepecek:hover {
   background-color: #009f0b !important;
   color: white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
+#isi-profile {
+  display: block;
+}
+
+#isi-edit {
+  display: none;
+}
+
 .profilebutton {
   font-weight: 600;
   font-size: 1.3rem;
   padding: 10px;
   margin-bottom: 0;
 }
+
 .profilebutton:hover {
   background-color: #eee !important;
   border-radius: 5px;
 }
+
 .tags {
   border-bottom: 1px dashed #eee;
   width: 24%;
   margin-top: 10px;
   margin-right: 10px;
+}
+
+.pemberitahuan-email,
+.pemberitahuan-pass {
+  display: none;
+  color: red;
+  font-size: .75rem;
+}
+
+.ganti-pass {
+  margin-left: 55px;
+  cursor: pointer;
 }
 
 .button {
@@ -520,6 +654,33 @@ section .baju {
   margin-top: 10px;
   cursor: pointer;
 }
+
+.trans-modal,
+.trans-modal-konfir {
+  background-color: rgba(10, 10, 10, 0.205);
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  display: none;
+}
+
+.modal-password,
+.modal-konfirmasi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(16, 196, 31);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.modal-password input,
+.modal-konfirmasi input {
+  border-radius: 5px;
+}
+
 .Footer {
   background-color: rgb(204, 204, 204);
 }
