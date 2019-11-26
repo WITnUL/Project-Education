@@ -401,6 +401,29 @@ form {
   background-color: #138301;
 }
 
+.tombolsearch2 {
+  background-color: rgb(177, 177, 177);
+  border: none;
+  color: rgb(65, 64, 64);
+  margin-left: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.tombolsearch2:hover {
+  color: white;
+}
+
+.search2 {
+  border-radius: 5px;
+  border: 1px solid #eee;
+  width: 250px;
+  display: none;
+  margin-left: 10px;
+  animation: open 1s ease;
+  -webkit-animation: open 1s ease;
+}
+
 .header {
   display: block;
 }
@@ -683,4 +706,78 @@ section .baju {
 
 .Footer {
   background-color: rgb(204, 204, 204);
+}
+
+@media(min-width:676px) {
+  #bodyContent {
+    width: 80%;
+  }
+
+  .bglistAtas {
+    display: none;
+  }
+
+  .headerContent2,
+  .tombolsearch2,
+  .headerContent2 h2 {
+    display: none;
+  }
+}
+
+@media (max-width:675px) {
+  .form-control {
+    display: none;
+  }
+
+  .tombolsearch {
+    display: none;
+  }
+
+  #listPinggir {
+    display: none;
+  }
+
+  #bodyContent {
+    width: 100% !important;
+    margin-top: 0 !important;
+  }
+
+  #headerContent {
+    display: none;
+  }
+
+  #cardUser {
+    display: none;
+  }
+
+  #sign-inout {
+    margin-right: 0 !important;
+  }
+
+  .bglistAtas {
+    width: 70%;
+    margin: auto;
+  }
+
+  .listAtas {
+    justify-content: space-around;
+  }
+
+  .headerContent2 {
+    padding: 10px;
+    background-color: rgb(177, 177, 177);
+    width: 100%;
+    border: #b1b1b1 solid 1px;
+  }
+
+}
+
+@keyframes open {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 250px;
+  }
 }

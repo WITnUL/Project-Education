@@ -10,6 +10,7 @@ body {
   text-align: left;
   color: black;
 }
+
 h1,
 h2,
 h3,
@@ -18,146 +19,189 @@ h5 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 hr {
   border: 0;
   box-sizing: content-box;
   border-top: 1px solid #eee;
   margin-bottom: 1rem;
 }
+
 a {
   text-decoration: none;
   background-color: transparent;
 }
+
 li {
   margin-bottom: 1rem;
 }
+
 .align-r {
   text-align: right;
 }
+
 .align-c {
   text-align: center;
 }
+
 .align-l {
   text-align: left;
 }
+
 .align-j {
   text-align: justify;
 }
+
 .align-middle {
   vertical-align: middle !important;
 }
+
 .bgc-abu {
   background-color: #eee;
 }
+
 .bgc-white {
   background-color: white;
 }
+
 .bgc-null {
   background-color: inherit !important;
 }
+
 .text-black {
   color: black;
 }
+
 .text-white {
   color: white;
 }
+
 .d-block,
 .d-block1 {
   display: block;
 }
+
 .d-in {
   display: inline !important;
 }
+
 .d-flex {
   display: flex !important;
 }
+
 .flex-row {
   flex-direction: row !important;
 }
+
 .d-inb {
   display: inline-block !important;
 }
+
 .d-none {
   display: none;
 }
+
 .mb-li {
   margin-bottom: 0.5rem;
 }
+
 .mb {
   margin-bottom: 1.5rem !important;
 }
+
 .mt {
   margin-top: 1.5rem !important;
 }
+
 .mr-auto {
   margin-right: auto;
 }
+
 .mt-bio {
   margin-top: 0.45rem;
 }
+
 .m-tb {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
 }
+
 .m-auto {
   margin: auto;
 }
+
 .mb-null {
   margin-bottom: 0 !important;
 }
+
 .mt-null {
   margin-top: 0 !important;
 }
+
 .mr-10 {
   margin-left: 10px !important;
 }
+
 p {
   margin-top: 0;
 }
+
 .pad {
   padding: 0.5rem;
 }
+
 .pad-tb {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
 .pad-lr {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .p-lr-null {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
 .w-100 {
   width: 100%;
 }
+
 .w-95 {
   width: 95%;
 }
+
 .border {
   border: 1px solid rgb(9, 172, 25);
 }
+
 .border-bot {
   border-bottom: 1px solid #eee;
 }
+
 .border-abu {
   border: 1px solid #eee;
   border-left: none;
   border-right: none;
   border-bottom: none;
 }
+
 .border-r {
   border-radius: 5px;
 }
+
 .just-beetwen {
   justify-content: space-between !important;
 }
+
 .pos-sticky {
   position: sticky;
   top: 0;
   z-index: 1025;
 }
+
 .pos-r {
   position: relative;
 }
@@ -165,22 +209,26 @@ p {
 * {
   box-sizing: border-box;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .nav {
   padding: 0.5rem 1rem;
   background-color: rgb(14, 99, 15);
   align-items: center;
   justify-content: space-between;
 }
+
 .nav .container {
   display: flex;
   flex-wrap: wrap;
 }
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -188,17 +236,20 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
 .link {
   text-decoration: none;
   color: white;
   font-weight: 800;
 }
+
 span {
   font-size: 1.5rem;
 }
+
 .listDesktop,
 .listDesktop1 {
-  flex-direction: column;
+  /* flex-direction: column; */
   list-style: none;
   margin-bottom: 0;
   margin-top: 0;
@@ -210,22 +261,27 @@ span {
   color: rgb(236, 236, 236);
   padding: 0.5rem 1rem;
 }
+
 .container ul li a:hover {
   font-weight: 500;
 }
+
 form {
   font-family: Lato, "PT Sans", Roboto, sans-serif;
 }
+
 .Search {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .cari2 {
   width: 100%;
   border: 3px ridge rgb(180, 180, 180);
   padding: 10px;
 }
+
 .cari3 {
   position: fixed;
   width: 100%;
@@ -234,12 +290,14 @@ form {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.404);
 }
+
 .input {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
 }
+
 .form-control {
   display: block;
   padding: 0.375rem 0.75rem;
@@ -250,6 +308,7 @@ form {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
+
 .tombolsearch,
 .tombolsearch1 {
   font-weight: 400;
@@ -266,18 +325,22 @@ form {
   background-color: #20b607;
   cursor: pointer;
 }
+
 .tombolsearch:hover {
   background-color: #138301;
 }
+
 .header {
   display: block;
 }
+
 .baju {
   padding: 4rem 2rem;
   background-color: rgba(11, 191, 29, 0.84);
   color: white;
   margin: 0;
 }
+
 .judul,
 .materi,
 .body-materi,
@@ -288,6 +351,7 @@ form {
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .judul h1 {
   text-shadow: 0px 0px 20px;
   font-size: 2.5rem;
@@ -295,16 +359,29 @@ form {
   margin-bottom: 0;
   margin-top: 0;
 }
+
 .judul p {
   text-transform: capitalize;
   margin-top: 0;
   font-size: 1.2em;
 }
+
 .content {
   display: block;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+
+.textTutor {
+  margin-left: 10px !important;
+  margin: 0;
+  font-size: 1rem !important;
+}
+
+.tutor {
+  padding-left: 50px;
+}
+
 .imgcontent,
 .reah {
   margin: auto;
@@ -318,6 +395,7 @@ form {
   word-wrap: break-word;
   box-shadow: 5px 5px 10px rgb(182, 178, 179);
 }
+
 .imgcontent img {
   vertical-align: middle;
   border-radius: 0.25rem;
@@ -325,10 +403,12 @@ form {
   border-bottom-right-radius: 0;
   width: 100%;
 }
+
 .judulcontent {
   flex: 1 1 auto;
   padding: 1.25rem;
 }
+
 .judulcontent h3 {
   font-weight: 700;
   margin-bottom: 0.75rem;
@@ -338,21 +418,25 @@ form {
   line-height: 1.2;
   margin-top: 0;
 }
+
 .page {
   position: relative;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
+
 .numberpage {
   display: block;
   width: 203px;
 }
+
 .cok {
   display: flex;
   padding-left: 0;
   margin-bottom: 1.5rem;
 }
+
 .numberpage a {
   background-color: #ffffff;
   color: black;
@@ -362,19 +446,23 @@ form {
   float: left;
   padding: 8px 15px;
 }
+
 section .baju {
   background-color: rgb(91, 91, 91);
 }
+
 .materi h2 {
   font-weight: 700;
   font-size: 2rem;
 }
+
 .list-materi {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
 }
+
 .list-materi-item {
   position: relative;
   display: block;
@@ -383,23 +471,28 @@ section .baju {
   margin-bottom: -1px;
   color: rgb(68, 68, 68);
 }
+
 .list-materi-item:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
+
 .list-materi-item:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 .share {
   display: block;
 }
+
 .imgshare {
   padding: 0;
   display: flex;
   position: relative;
   list-style: none;
 }
+
 .share-item {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -407,13 +500,16 @@ section .baju {
   height: 30px;
   cursor: pointer;
 }
+
 .listimg {
   width: 30px;
   height: 30px;
 }
+
 .img-materi-lain {
   width: 60px;
 }
+
 .balas-comment {
   font-size: 0.75rem !important;
   font-style: italic;
@@ -425,6 +521,7 @@ section .baju {
   .container {
     max-width: 1126px !important;
   }
+
   .imgcontent {
     width: 90%;
   }
@@ -435,47 +532,58 @@ section .baju {
     flex-direction: row;
   }
 }
+
 @media (min-width: 867px) {
   .materi {
     flex: 0 0 33.33333% !important;
     max-width: 33.33333% !important;
   }
+
   .body-materi1 {
     flex: 0 0 25%;
     max-width: 25%;
   }
+
   .body-materi {
     flex: 0 0 75%;
     max-width: 75%;
   }
+
   .d-block1 {
     display: block !important;
   }
 }
+
 @media (max-width: 867px) {
   .listDesktop {
     display: none !important;
   }
+
   .listDesktop1 {
     display: flex;
   }
 }
+
 @media (min-width: 540px) {
   .materi {
     flex: 0 0 50%;
     max-width: 50%;
   }
+
   .container {
     max-width: 851px;
   }
 }
+
 @media (max-width: 485px) {
   .form-control {
     display: none;
   }
+
   .tombolsearch {
     display: none;
   }
+
   .tombolsearch1 {
     display: block;
     border-top-left-radius: 5px;
@@ -490,12 +598,14 @@ section .baju {
   border: 1px solid #eee;
   border-radius: 5px;
 }
+
 .button {
   background-color: #13ba28;
   border: none;
   margin-top: 10px;
   cursor: pointer;
 }
+
 .Footer {
   background-color: rgb(204, 204, 204);
 }
