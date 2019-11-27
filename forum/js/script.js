@@ -74,7 +74,7 @@ $(document).ready(function () {
     if (email != email1 || password != pass1) {
       alert('email atau password salah')
     } else if (email == email1 && password == pass1) {
-      window.location.href = "/forum/index.html"
+      window.location.href = "Project-Education/forum/index.html"
       alert("login Succesfull")
     }
   })
