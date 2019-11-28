@@ -34,7 +34,6 @@ a {
 }
 
 li {
-  margin-bottom: 1rem;
   list-style: none;
 }
 
@@ -341,6 +340,10 @@ span {
   margin-top: 0;
 }
 
+.listDesktop li {
+  margin-bottom: 10px;
+}
+
 .container ul li a {
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -405,7 +408,7 @@ form {
   background-color: rgb(177, 177, 177);
   border: none;
   color: rgb(65, 64, 64);
-  margin-left: 20px;
+  margin-left: 4px;
   margin-top: 5px;
   cursor: pointer;
 }
@@ -417,11 +420,12 @@ form {
 .search2 {
   border-radius: 5px;
   border: 1px solid #eee;
-  width: 250px;
   display: none;
+  width: 130px;
+  padding: 10px;
   margin-left: 10px;
-  animation: open 1s ease;
-  -webkit-animation: open 1s ease;
+  animation: open 1s ease forwards;
+  -webkit-animation: open 1s ease forwards;
 }
 
 .header {
@@ -607,7 +611,12 @@ section .baju {
 }
 
 .jmllihat-jawab {
-  width: 13%;
+  width: 80px;
+  background-color: rgb(108, 238, 108);
+}
+
+.jmllihat-jawab li {
+  margin-bottom: 10px;
 }
 
 .plengngen {
@@ -654,7 +663,7 @@ section .baju {
 
 .tags {
   border-bottom: 1px dashed #eee;
-  width: 24%;
+  width: 240px;
   margin-top: 10px;
   margin-right: 10px;
 }
@@ -708,7 +717,7 @@ section .baju {
   background-color: rgb(204, 204, 204);
 }
 
-@media(min-width:676px) {
+@media(min-width:576px) {
   #bodyContent {
     width: 80%;
   }
@@ -724,7 +733,7 @@ section .baju {
   }
 }
 
-@media (max-width:675px) {
+@media (max-width:575px) {
   .form-control {
     display: none;
   }
@@ -746,6 +755,14 @@ section .baju {
     display: none;
   }
 
+  .plengngen {
+    width: 100%;
+  }
+
+  #nav-user {
+    margin-right: 0 !important;
+  }
+
   #cardUser {
     display: none;
   }
@@ -759,8 +776,26 @@ section .baju {
     margin: auto;
   }
 
+  .tags {
+    width: 205px;
+  }
+
+  .bertanya input {
+    width: 100% !important;
+  }
+
+  #button-bertanya {
+    width: 100% !important;
+  }
+
+  .bertanya textarea {
+    width: 100% !important;
+  }
+
   .listAtas {
     justify-content: space-around;
+    padding-left: 0;
+    font-size: .80rem;
   }
 
   .headerContent2 {
@@ -768,6 +803,10 @@ section .baju {
     background-color: rgb(177, 177, 177);
     width: 100%;
     border: #b1b1b1 solid 1px;
+  }
+
+  #form-login {
+    width: 100% !important;
   }
 
 }
@@ -778,6 +817,6 @@ section .baju {
   }
 
   to {
-    width: 250px;
+    width: 130px;
   }
 }

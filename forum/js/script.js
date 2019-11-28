@@ -64,24 +64,22 @@ $(document).ready(function () {
   })
 });
 
-$(document).ready(function () {
-  $('#form').submit(function () {
-    var email = $('#email').val();
-    var password = $('#pass').val();
-    var email1 = "witsudi@gmail.com";
-    var pass1 = "witsudi217"
 
-    if (email != email1 || password != pass1) {
-      alert('email atau password salah')
-    } else if (email == email1 && password == pass1) {
-      window.location.href = "Project-Education/forum/index.html"
-      alert("login Succesfull")
-    }
-  })
+$('#form').submit(function () {
+  var email = $('#email').val();
+  var password = $('#pass').val();
+  var email1 = "witsudi@gmail.com";
+  var pass1 = "witsudi217";
+
+  if (email != email1 || password != pass1) {
+    alert("Email atau Password salah")
+  } else if (email == email1 && password == pass1) {
+    window.location.href = "/forum/index.html"
+    alert("login Succesfull")
+  }
 })
 
-$(document).ready(function () {
-  $('.tombolsearch2').click(function () {
-    $('.search2').toggle();
-  })
+
+$('.tombolsearch2').click(function () {
+  $('.search2').toggle();
 })
