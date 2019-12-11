@@ -46,10 +46,7 @@ $(document).ready(function () {
   $('#close').click(function () {
     $('.trans-modal').hide();
   });
-  $('.trans-modal').click(function () {
-    $('.trans-modal').hide();
-  })
-});
+})
 
 // modal konfirmasi edit
 $(document).ready(function () {
@@ -59,10 +56,7 @@ $(document).ready(function () {
   $('#close').click(function () {
     $('.trans-modal-konfir').hide();
   });
-  $('.trans-modal-konfir').click(function () {
-    $('.trans-modal-konfir').hide();
-  })
-});
+})
 
 
 $('#form').submit(function () {

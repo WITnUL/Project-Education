@@ -21,6 +21,10 @@ h6 {
   margin-bottom: 0;
 }
 
+.flex1 {
+  flex: 1;
+}
+
 hr {
   border: 0;
   box-sizing: content-box;
@@ -678,6 +682,8 @@ section .baju {
 .ganti-pass {
   margin-left: 55px;
   cursor: pointer;
+  margin-top: 10px;
+  color: #2711eb;
 }
 
 .button {
@@ -743,7 +749,7 @@ section .baju {
   }
 
   #listPinggir {
-    display: none;
+    display: none !important;
   }
 
   #bodyContent {
@@ -752,7 +758,12 @@ section .baju {
   }
 
   #headerContent {
-    display: none;
+    display: none !important;
+  }
+
+  .modal-konfirmasi,
+  .modal-password {
+    width: 90%;
   }
 
   .plengngen {
@@ -777,7 +788,7 @@ section .baju {
   }
 
   .tags {
-    width: 205px;
+    width: 165px;
   }
 
   .bertanya input {
@@ -796,6 +807,23 @@ section .baju {
     justify-content: space-around;
     padding-left: 0;
     font-size: .80rem;
+  }
+
+  #profileUser {
+    display: block !important;
+    text-align: center;
+  }
+
+  #photo {
+    margin: auto;
+  }
+
+  .ganti-pass {
+    margin-left: 0;
+  }
+
+  .navProfile {
+    margin-left: 0 !important;
   }
 
   .headerContent2 {

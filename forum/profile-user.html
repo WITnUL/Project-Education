@@ -1,152 +1,126 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="forum.css" />
-    <meta name="viewport" content="width=device-width" , intial-scale="1" />
-    <title>Profile</title>
-  </head>
-  <body>
-    <div class="nav p-lr-null pos-sticky">
-      <div class="container align-l just-beetwen">
-        <a class="link align-l" href="index.html">
-          <img src="img/judul.png" alt="home" style="margin-top:.35rem;" />
-        </a>
-        <form class="Search" action="#">
-          <div class="input">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search..."
-              style="width:585px;"
-            />
-            <div class="submit">
-              <button class="tombolsearch" type="submit">
-                <svg
-                  height="16"
-                  width="16"
-                  role="img"
-                  viewBox="0 0 512 512"
-                  alt="Search"
-                  id="search-icon"
-                >
-                  <path
-                    fill="currentcolor"
-                    d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-                    id="icon-search"
-                  ></path>
-                </svg>
-              </button>
-            </div>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="forum.css" />
+  <meta name="viewport" content="width=device-width" , intial-scale="1" />
+  <title>Profile</title>
+</head>
+
+<body>
+  <div class="nav p-lr-null pos-sticky">
+    <div class="container align-l just-beetwen">
+      <a class="link align-l" href="index.html">
+        <img src="img/judul.png" alt="home" style="margin-top:.35rem;" />
+      </a>
+      <form class="Search" action="#">
+        <div class="input">
+          <input type="text" class="form-control" placeholder="Search..." style="width:585px;" />
+          <div class="submit">
+            <button class="tombolsearch" type="submit">
+              <svg height="16" width="16" role="img" viewBox="0 0 512 512" alt="Search" id="search-icon">
+                <path fill="currentcolor"
+                  d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                  id="icon-search"></path>
+              </svg>
+            </button>
           </div>
-        </form>
-        <div class="mr">
-          <a href="profile.html" class="d-flex">
-            <div class="d-block profilenav">
-              <img
-                src="img/profile.jpg"
-                class="align-middle d-inb lingkaran"
-                style="width:40px;height:40px"
-              />
-            </div>
-            <div class="ml">
-              <h5 class="align-middle profilenav text-white">nama user</h5>
-            </div>
-          </a>
         </div>
+      </form>
+      <div class="mr">
+        <a href="profile.html" class="d-flex">
+          <div class="d-block profilenav">
+            <img src="img/profile.jpg" class="align-middle d-inb lingkaran" style="width:40px;height:40px" />
+          </div>
+          <div class="ml">
+            <h5 class="align-middle profilenav text-white">nama user</h5>
+          </div>
+        </a>
       </div>
     </div>
-    <div class="d-flex">
-      <div class="container">
-        <div class="row">
-          <div class="pad-t bor-r d-if w-15">
-            <ul class="listDesktop pad m-auto">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="tag.html">Tags</a></li>
-            </ul>
-          </div>
-          <div class="pad-lr mt " style="width:80%;">
-            <div class="row">
-              <div class="pad-lr ml-cont border-bot" style="width:100%;">
-                <div
-                  class="pad-lr d-flex just-beetwen mt"
-                  style="margin-bottom:.75rem;"
-                >
-                  <div class="pad-lr d-flex profcampo">
-                    <button type="button" class="button profilepecek ">
-                      Profile
-                    </button>
-                  </div>
+  </div>
+  <div class="d-flex">
+    <div class="container">
+      <div class="row">
+        <div id="listPinggir" class="pad-t bor-r d-if w-15">
+          <ul class="listDesktop pad m-auto">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tag.html">Tags</a></li>
+          </ul>
+        </div>
+        <div id="bodyContent" class="pad-lr mt " style="width:80%;">
+          <div class="row">
+            <div class="pad-lr ml-cont border-bot" style="width:100%;">
+              <div class="pad-lr d-flex just-beetwen mt" style="margin-bottom:.75rem;">
+                <div class="pad-lr d-flex profcampo">
+                  <button type="button" class="button profilepecek ">
+                    Profile
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class=" pad-lr d-flex m-tb">
-                <div class="pad-lr">
-                  <div
-                    class="bgc-abu border"
-                    style="width:202px; height:220px; line-height:220px;"
-                  >
-                    <img
-                      src="img/no-thumbnail.jpg"
-                      alt="foto profile"
-                      class="pos-r align-middle"
-                      style="width:200px;"
-                    />
-                  </div>
+          </div>
+          <div class="row">
+            <div id="profileUser" class=" pad-lr d-flex m-tb">
+              <div class="pad-lr">
+                <div id="photo" class="bgc-abu border" style="width:202px; height:220px; line-height:220px;">
+                  <img src="img/no-thumbnail.jpg" alt="foto profile" class="pos-r align-middle" style="width:200px;" />
                 </div>
-                <div class="pad-lr ">
-                  <div class="pad-lr">
-                    <div class="align-l">
-                      <h2>nama user</h2>
-                      <h5 class="text-abu" style="font-weight:400;">
-                        status user
+              </div>
+              <div class="pad-lr ">
+                <div class="pad-lr">
+                  <div class="align-l">
+                    <h2>nama user</h2>
+                    <h5 class="text-abu" style="font-weight:400;">
+                      status user
+                    </h5>
+                  </div>
+                  <div class="align-l m-tb mb-null">
+                    <label>Deskripsi :</label>
+                    <div class="pad-lr align-just">
+                      <h5 style="font-weight:400;">
+                        disini tempat deskripsi mengenai tentang user mungkin
+                        kita nanti akan menentukan maksimal karakter yang bisa
+                        diisi disini sesuai yg diinginkan supaya tidak merusak
+                        tampilan.
                       </h5>
                     </div>
-                    <div class="align-l m-tb mb-null">
-                      <label>Deskripsi :</label>
-                      <div class="pad-lr align-just">
-                        <h5 style="font-weight:400;">
-                          disini tempat deskripsi mengenai tentang user mungkin
-                          kita nanti akan menentukan maksimal karakter yang bisa
-                          diisi disini sesuai yg diinginkan supaya tidak merusak
-                          tampilan.
-                        </h5>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="pad-lr w-100">
-              <div class="border-bot">
-                <ul class="profcampo">
-                  <li>
-                    <button class="bgc-null border-null button profilebutton">
-                      Information
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <div class="pad-lr pad pad-t">
-                <h5>Country:</h5>
-                <label class="text-abu style-italic">Indonesia</label>
-                <h5 class="mt">E-mail:</h5>
-                <label class="text-abu style-italic">exemple@mail.com</label>
-                <h5 class="mt">No. HP:</h5>
-                <label class="text-abu style-italic">+62 8xxxxxxxxx</label>
-              </div>
+          </div>
+          <div class="pad-lr w-100">
+            <div class="border-bot">
+              <ul class="profcampo">
+                <li>
+                  <button class="bgc-null border-null button profilebutton">
+                    Information
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="pad-lr pad pad-t">
+              <h5>Country:</h5>
+              <label class="text-abu style-italic">Indonesia</label>
+              <h5 class="mt">E-mail:</h5>
+              <label class="text-abu style-italic">exemple@mail.com</label>
+              <h5 class="mt">No. HP:</h5>
+              <label class="text-abu style-italic">+62 8xxxxxxxxx</label>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="Footer baju">
-      <div class="container">
-        <div class="row">
-          <h2 class="m-auto text-black">Footer</h2>
-        </div>
+  </div>
+  <div class="Footer baju">
+    <div class="container">
+      <div class="row">
+        <h2 class="m-auto text-black">Footer</h2>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

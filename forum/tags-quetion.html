@@ -1,157 +1,215 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="forum.css">
-    <meta name="viewport" content="width=device-width" , intial-scale=1>
-    <title>Forum PinterCoding</title>
-  </head>
-  <body>
-    <div class="nav p-lr-null pos-sticky">
-      <div class="container align-l just-beetwen">
-        <a class="link align-l" href="index.html"> <img src="img/judul.png" alt="home" style="margin-top:.35rem;"> </a>
-        <form class="Search" action="#">
-          <div class="input">
-            <input type="text" class="form-control" placeholder="Search..." style="width:585px;">
-            <div class="submit">
-              <button class="tombolsearch" type="submit">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="forum.css">
+  <meta name="viewport" content="width=device-width" , intial-scale=1>
+  <title>Forum PinterCoding</title>
+  <script src="js/jquery.js"></script>
+</head>
+
+<body>
+  <div class="nav p-lr-null pos-sticky">
+    <div class="container align-l just-beetwen">
+      <a class="link align-l" href="index.html"> <img src="img/judul.png" alt="home" style="margin-top:.35rem;"> </a>
+      <form class="Search" action="#">
+        <div class="input">
+          <input type="text" class="form-control" placeholder="Search..." style="width:585px;">
+          <div class="submit">
+            <button class="tombolsearch" type="submit">
+              <svg height="16" width="16" role="img" viewBox="0 0 512 512" alt="Search" id="search-icon">
+                <path fill="currentcolor"
+                  d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                  id="icon-search">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+      <div id="nav-user" class="pad mr">
+        <button class="button mt-null" style="background-color:rgb(14, 99, 15);" type="button"><a href="login.html"
+            class="text-black">Login</a> </button>
+        <button class="button mt-null pad border-r" type="button"><a href="signup" class="text-black">Sign Up</a>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="bglistAtas">
+    <ul class="d-flex listAtas">
+      <li><a href="index.html" class="text-abu">Home</a></li>
+      <li><a href="index.html" class="text-abu">Pertanyaan</a></li>
+      <li><a href="tag.html" class="text-abu">Tags</a></li>
+      <li><a href="pertanyaan-baru.html" class="text-abu">Bertanya</a></li>
+    </ul>
+  </div>
+  <div class="d-flex">
+    <div class="container">
+      <div class="row">
+        <div id="listPinggir" class="pad-t bor-r d-if w-15">
+          <ul class="listDesktop pad m-auto">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tag.html">tags</a></li>
+          </ul>
+        </div>
+        <div id="bodyContent" class="pad-lr mt " style="width:80%;">
+          <div class="row">
+            <div class="pad-lr border-bot" style="width:100%;">
+              <div class="pad-lr d-flex just-beetwen">
+                <h1>Quetion Tagged [Name Tags]</h1>
+                <button id="headerContent" type="button" name="button" class="button pad border-r"> <a
+                    href="pertanyaan-baru.html" class="text-white">Bertanya</a> </button>
+              </div>
+              <div class="pad-lr">
+                <p style="font-size: .85rem;">disini keterangan/penjelasan tentang tagsnya. disini hanya dijelaskan
+                  intinya saja biar tidak terlalu panjang. kalau pengen tahu lebih banyak,silahkan search di google.
+                  google belum tutup loo!!</p>
+              </div>
+              <div id="headerContent" class="pad-lr d-flex just-beetwen mt" style="margin-bottom:.75rem;">
+                <h5>Jumlah pertanyaan</h5>
+                <!-- <select class="border-null">
+                  <option value="new">Newest</option>
+                  <option value="older">older</option>
+                </select> -->
+              </div>
+            </div>
+            <div class="headerContent2 d-flex">
+              <h2>Semua Pertanyaan</h2>
+              <button class="tombolsearch2" type="submit">
                 <svg height="16" width="16" role="img" viewBox="0 0 512 512" alt="Search" id="search-icon">
-                  <path fill="currentcolor" d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z" id="icon-search">
+                  <path fill="currentcolor"
+                    d="M505 442.7 405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9.0 208 0S0 93.1.0 208s93.1 208 208 208c48.3.0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9.0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7.0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7.0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+                    id="icon-search">
                   </path>
                 </svg>
               </button>
+              <input class="search2" type="text" placeholder="Search">
             </div>
           </div>
-        </form>
-        <div class="pad mr">
-          <button class="button mt-null"style="background-color:rgb(14, 99, 15);" type="button"><a href="login.html" class="text-black">Login</a> </button>
-          <button class="button mt-null pad border-r" type="button" ><a href="signup" class="text-black">Sign Up</a> </button>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex">
-      <div class="container">
-        <div class="row">
-          <div class="pad-t bor-r d-if w-15">
-            <ul class="listDesktop pad m-auto">
-              <li ><a href="index.html">Home</a></li>
-              <li ><a href="tag.html">tags</a></li>
-            </ul>
-          </div>
-          <div class="pad-lr mt " style="width:80%;">
-            <div class="row">
-              <div class="pad-lr border-bot" style="width:100%;">
-                <div class="pad-lr d-flex just-beetwen">
-                  <h1>Quetion Tagged [Name Tags]</h1>
-                  <button type="button" name="button" class="button pad border-r"> <a href="pertanyaan-baru.html" class="text-white">Bertanya</a> </button>
-                </div>
-                <div class="pad-lr">
-                  <p style="font-size: .85rem;">disini keterangan/penjelasan tentang tagsnya. disini hanya dijelaskan intinya saja biar tidak terlalu panjang. kalau pengen tahu lebih banyak,silahkan search di google. google belum tutup loo!!</p>
-                </div>
-                <div class="pad-lr d-flex just-beetwen mt" style="margin-bottom:.75rem;">
-                  <h5>Jumlah pertanyaan</h5>
-                  <select class="border-null">
-                    <option value="new">Newest</option>
-                    <option value="older">older</option>
-                  </select>
-                </div>
+          <div class="row">
+            <div class=" border-bot d-flex" style="width:100%;">
+              <div class="jmllihat-jawab ">
+                <ul class="align-c listpertanyaan bor-r pad">
+                  <li>
+                    <h6 class="mt mb-null">0</h6><label>View</label>
+                  </li>
+                  <li>
+                    <h6 class="mt-null mb-null">0</h6><label>Answer</label>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div class="row">
-              <div class=" border-bot d-flex" style="width:100%;">
-                <div class="jmllihat-jawab pad">
-                  <ul class="align-c listpertanyaan bor-r pad">
-                    <li ><h6 class="mt mb-null">0</h6><label>View</label></li>
-                    <li><h6 class="mt-null mb-null">0</h6><label>Answer</label></li>
-                  </ul>
+              <div class="plengngen">
+                <div class="pad">
+                  <a href="pertanyaan.html" class="text-black">
+                    <h2>judul pertanyaan</h2>
+                  </a>
+                  <h5 class="text-abu" style="font-weight:400">bertanya harus jelas, singkat dan padat. jangan
+                    bertele-tele, supaya orang yang lihat tidak males bacanya. Thankyou...</h5>
+                  <button class="bgc-abu border-null text-abu border-r">Name Tags</button>
                 </div>
-                <div class="plengngen">
-                  <div class="pad">
-                    <a href="pertanyaan.html" class="text-black"><h2>judul pertanyaan</h2></a>
-                    <h5 class="text-abu"style="font-weight:400">bertanya harus jelas, singkat dan padat. jangan bertele-tele, supaya orang yang lihat tidak males bacanya. Thankyou...</h5>
-                    <button class="bgc-abu border-null text-abu border-r">Name Tags</button>
-                  </div>
-                  <div class="pad-lr float-r d-block">
-                    <h6 class="text-abu align-c mt-null"style="font-weight:400;margin-bottom:.5rem; margin-top:1rem;">Waktu bertanya</h6>
-                      <a href="profile.html" class="text-black d-flex">
-                        <img src="img/no-thumbnail.jpg" style="width:70px;">
-                        <h5 class="pad-lr">Username</h5>
-                      </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class=" border-bot d-flex" style="width:100%;">
-                <div class="jmllihat-jawab pad">
-                  <ul class="align-c listpertanyaan bor-r pad">
-                    <li ><h6 class="mt mb-null">0</h6><label>View</label></li>
-                    <li><h6 class="mt-null mb-null">0</h6><label>Answer</label></li>
-                  </ul>
-                </div>
-                <div class="plengngen">
-                  <div class="pad">
-                    <a href="pertanyaan.html" class="text-black"><h2>judul pertanyaan</h2></a>
-                    <h5 class="text-abu"style="font-weight:400">bertanya harus jelas, singkat dan padat. jangan bertele-tele, supaya orang yang lihat tidak males bacanya. Thankyou...</h5>
-                    <button class="bgc-abu border-null text-abu border-r">Name Tags</button>
-                  </div>
-                  <div class="pad-lr float-r d-block">
-                    <h6 class="text-abu align-c mt-null"style="font-weight:400;margin-bottom:.5rem; margin-top:1rem;">Waktu bertanya</h6>
-                      <a href="profile.html" class="text-black d-flex">
-                        <img src="img/no-thumbnail.jpg" style="width:70px;">
-                        <h5 class="pad-lr">Username</h5>
-                      </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class=" border-bot d-flex" style="width:100%;">
-                <div class="jmllihat-jawab pad">
-                  <ul class="align-c listpertanyaan bor-r pad">
-                    <li ><h6 class="mt mb-null">0</h6><label>View</label></li>
-                    <li><h6 class="mt-null mb-null">0</h6><label>Answer</label></li>
-                  </ul>
-                </div>
-                <div class="plengngen">
-                  <div class="pad">
-                    <a href="pertanyaan.html" class="text-black"><h2>judul pertanyaan</h2></a>
-                    <h5 class="text-abu"style="font-weight:400">bertanya harus jelas, singkat dan padat. jangan bertele-tele, supaya orang yang lihat tidak males bacanya. Thankyou...</h5>
-                    <button class="bgc-abu border-null text-abu border-r">Name Tags</button>
-                  </div>
-                  <div class="pad-lr float-r d-block">
-                    <h6 class="text-abu align-c mt-null"style="font-weight:400;margin-bottom:.5rem; margin-top:1rem;">Waktu bertanya</h6>
-                      <a href="profile.html" class="text-black d-flex">
-                        <img src="img/no-thumbnail.jpg" style="width:70px;">
-                        <h5 class="pad-lr">Username</h5>
-                      </a>
-                  </div>
+                <div id="cardUser" class="pad-lr float-r d-block">
+                  <h6 class="text-abu align-c mt-null" style="font-weight:400;margin-bottom:.5rem; margin-top:1rem;">
+                    Waktu bertanya</h6>
+                  <a href="profile.html" class="text-black d-flex">
+                    <img src="img/no-thumbnail.jpg" style="width:70px;">
+                    <h5 class="pad-lr">Username</h5>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="page mt">
-            <div class="numberpage m-auto">
-              <nav class="cok">
-                <a href="#">&laquo;</a>
-                <a class="active" href="#">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">&raquo;</a>
-              </nav>
+          <div class="row">
+            <div class=" border-bot d-flex" style="width:100%;">
+              <div class="jmllihat-jawab ">
+                <ul class="align-c listpertanyaan bor-r pad">
+                  <li>
+                    <h6 class="mt mb-null">0</h6><label>View</label>
+                  </li>
+                  <li>
+                    <h6 class="mt-null mb-null">0</h6><label>Answer</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="plengngen">
+                <div class="pad">
+                  <a href="pertanyaan.html" class="text-black">
+                    <h2>judul pertanyaan</h2>
+                  </a>
+                  <h5 class="text-abu" style="font-weight:400">bertanya harus jelas, singkat dan padat. jangan
+                    bertele-tele, supaya orang yang lihat tidak males bacanya. Thankyou...</h5>
+                  <button class="bgc-abu border-null text-abu border-r">Name Tags</button>
+                </div>
+                <div id="cardUser" class="pad-lr float-r d-block">
+                  <h6 class="text-abu align-c mt-null" style="font-weight:400;margin-bottom:.5rem; margin-top:1rem;">
+                    Waktu bertanya</h6>
+                  <a href="profile.html" class="text-black d-flex">
+                    <img src="img/no-thumbnail.jpg" style="width:70px;">
+                    <h5 class="pad-lr">Username</h5>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class=" border-bot d-flex" style="width:100%;">
+              <div class="jmllihat-jawab ">
+                <ul class="align-c listpertanyaan bor-r pad">
+                  <li>
+                    <h6 class="mt mb-null">0</h6><label>View</label>
+                  </li>
+                  <li>
+                    <h6 class="mt-null mb-null">0</h6><label>Answer</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="plengngen">
+                <div class="pad">
+                  <a href="pertanyaan.html" class="text-black">
+                    <h2>judul pertanyaan</h2>
+                  </a>
+                  <h5 class="text-abu" style="font-weight:400">bertanya harus jelas, singkat dan padat. jangan
+                    bertele-tele, supaya orang yang lihat tidak males bacanya. Thankyou...</h5>
+                  <button class="bgc-abu border-null text-abu border-r">Name Tags</button>
+                </div>
+                <div id="cardUser" class="pad-lr float-r d-block">
+                  <h6 class="text-abu align-c mt-null" style="font-weight:400;margin-bottom:.5rem; margin-top:1rem;">
+                    Waktu bertanya</h6>
+                  <a href="profile.html" class="text-black d-flex">
+                    <img src="img/no-thumbnail.jpg" style="width:70px;">
+                    <h5 class="pad-lr">Username</h5>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="Footer baju">
-      <div class="container">
-        <div class="row">
-          <h2 class="m-auto text-black">Footer</h2>
+      <!-- <div class="row">
+        <div class="page mt">
+          <div class="numberpage m-auto">
+            <nav class="cok">
+              <a href="#">&laquo;</a>
+              <a class="active" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">&raquo;</a>
+            </nav>
+          </div>
         </div>
+      </div> -->
+    </div>
+  </div>
+  <div class="Footer baju">
+    <div class="container">
+      <div class="row">
+        <h2 class="m-auto text-black">Footer</h2>
       </div>
     </div>
-  </body>
+  </div>
+
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
